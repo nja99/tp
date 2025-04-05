@@ -39,9 +39,9 @@ public class Messages {
     public static String format(Person person) {
         final StringBuilder builder = new StringBuilder();
         builder.append(person.getName())
-                .append("\nContact: ")
+                .append("\nPhone: ")
                 .append(person.getPhone())
-                .append(" ")
+                .append("\nEmail: ")
                 .append(person.getEmail())
                 .append("\nAddress: ")
                 .append(person.getAddress());
@@ -58,16 +58,16 @@ public class Messages {
         }
 
         if (person instanceof Patient) {
-            builder.append("\nDepartment: ")
+            builder.append("\nDoctor in Charge: ")
                     .append(((Patient) person).getDoctorInCharge() != null ? ((Patient) person)
                             .getDoctorInCharge() : "")
-                    .append(" ")
+                    .append("\nDepartment: ")
                     .append(((Patient) person).getDepartment() != null ? ((Patient) person)
                             .getDepartment() : "NA")
                     .append("\nNOK: ")
                     .append(((Patient) person).getNextofKin().getName() != null ? ((Patient) person)
                             .getNextofKin().getName() : "NA")
-                    .append(" ")
+                    .append("\nNOK Phone: ")
                     .append(((Patient) person).getNextofKin().getPhone() != null ? ((Patient) person)
                             .getNextofKin().getPhone() : "000")
                     .append("\nRemark: ")

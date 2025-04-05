@@ -43,6 +43,8 @@ public class ContentPanel extends UiPart<Region> {
     private Label doctorInCharge;
     @FXML
     private Label nextOfKin;
+    @FXML
+    private Label nextOfKinPhone;
 
     public ContentPanel() {
         super(FXML);
@@ -73,6 +75,7 @@ public class ContentPanel extends UiPart<Region> {
 
             providerRole.setVisible(true);
             setVisiblity(nextOfKin, false);
+            setVisiblity(nextOfKinPhone, false);
             setVisiblity(doctorInCharge, false);
         }
 
@@ -80,10 +83,12 @@ public class ContentPanel extends UiPart<Region> {
             // Extra Details for Patient
             department.setText(patient.getDepartment().toString());
             doctorInCharge.setText(patient.getDoctorInCharge());
-            nextOfKin.setText(patient.getNextofKin().toString());
+            nextOfKin.setText(patient.getNextofKin().getName().toString());
+            nextOfKinPhone.setText(patient.getNextofKin().getPhone().toString());
 
             providerRole.setVisible(false);
             setVisiblity(nextOfKin, true);
+            setVisiblity(nextOfKinPhone, true);
             setVisiblity(doctorInCharge, true);
         }
 

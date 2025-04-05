@@ -25,6 +25,10 @@
     -fx-font-family: "Segoe UI Semibold";
 }
 
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
 .tab-pane {
     -fx-padding: 0 0 0 1;
 }

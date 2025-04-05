@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.stage.Stage?>
 
-<fx:root minHeight="600" minWidth="450" onCloseRequest="#handleExit" title="A Caring Book" type="javafx.stage.Stage" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root minHeight="600" minWidth="800" onCloseRequest="#handleExit" title="A Caring Book" type="javafx.stage.Stage" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
   <icons>
     <Image url="@/images/caringbook.png" />
   </icons>
@@ -32,7 +32,7 @@
 
         <HBox prefHeight="450.0" prefWidth="764.0" VBox.vgrow="ALWAYS">
           <!-- List Panel on the Left -->
-          <VBox fx:id="personList" minWidth="171.0" prefHeight="450.0" prefWidth="705.0" styleClass="pane-with-border" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+          <VBox fx:id="personList" minWidth="400.0" prefHeight="450.0" prefWidth="705.0" styleClass="pane-with-border" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
             <padding>
               <Insets bottom="10" left="10" right="10" top="10" />
             </padding>
@@ -40,7 +40,7 @@
           </VBox>
 
           <!-- Right Side Stack of contentPanel and resultDisplayPanel -->
-          <VBox fx:id="rightPanel" prefHeight="450.0" prefWidth="631.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+          <VBox fx:id="rightPanel" prefHeight="450.0" prefWidth="705.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
             <!-- contentPanel: Takes 2/3 of the space -->
             <VBox fx:id="contentPanel" prefHeight="275.0" prefWidth="345.0" styleClass="grid-pane" VBox.vgrow="ALWAYS">
               <padding>

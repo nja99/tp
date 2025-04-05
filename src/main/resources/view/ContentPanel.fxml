@@ -1,66 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.StackPane?>
-
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.Label?>
-<StackPane fx:id="placeHolder" styleClass="pane-with-border" xmlns="http://javafx.com/javafx/17"
-           xmlns:fx="http://javafx.com/fxml/1">
+<?import javafx.scene.control.ScrollPane?>
+
+<ScrollPane fx:id="placeHolder" styleClass="pane-with-border" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fitToWidth="true">
     <VBox fx:id="contentContainer">
         <!-- Role -->
         <HBox visible="false">
             <Label text="Role: " styleClass="label-bold, cell_small_label"/>
-            <Label fx:id="role" styleClass="cell-small-label"/>
-            <Label fx:id="providerRole" styleClass="cell-small-label"/>
+            <Label fx:id="role" styleClass="cell_small_label"/>
+            <Label fx:id="providerRole" styleClass="cell_small_label"/>
         </HBox>
 
         <!-- Department -->
         <HBox visible="false">
-            <Label text="Department: " styleClass="label-bold, cell_small_label"/>
-            <Label fx:id="department" styleClass="cell-small-label"/>
+            <Label text="Department: " styleClass="label-bold, cell_small_label" minWidth="98.0"/>
+            <Label fx:id="department" styleClass="cell_small_label" wrapText="true"/>
         </HBox>
 
         <!-- Name -->
         <HBox visible="false">
-            <Label text="Name: " styleClass="label-bold, cell_small_label"/>
-            <Label fx:id="name" styleClass="cell-small-label"/>
+            <Label text="Name: " styleClass="label-bold, cell_small_label" minWidth="54.0"/>
+            <Label fx:id="name" styleClass="cell_small_label" wrapText="true"/>
         </HBox>
 
         <!-- Phone -->
         <HBox visible="false">
             <Label text="Phone: " styleClass="label-bold, cell_small_label"/>
-            <Label fx:id="phone" styleClass="cell-small-label"/>
+            <Label fx:id="phone" styleClass="cell_small_label"/>
         </HBox>
 
         <!-- Email -->
         <HBox visible="false">
-            <Label text="Email: " styleClass="label-bold, cell_small_label"/>
-            <Label fx:id="email" styleClass="cell-small-label"/>
+            <Label text="Email: " styleClass="label-bold, cell_small_label" minWidth="52.0"/>
+            <Label fx:id="email" styleClass="cell_small_label" wrapText="true"/>
         </HBox>
 
         <!-- Address -->
         <HBox visible="false">
-            <Label text="Address: " styleClass="label-bold, cell_small_label"/>
-            <Label fx:id="address" styleClass="cell-small-label"/>
+            <Label text="Address: " styleClass="label-bold, cell_small_label" minWidth="70.0"/>
+            <Label fx:id="address" styleClass="cell_small_label" wrapText="true"/>
         </HBox>
 
         <!-- Doctor In Charge (For Patients) -->
         <HBox visible="false">
-            <Label text="Doctor in Charge: " styleClass="label-bold, cell_small_label"/>
-            <Label fx:id="doctorInCharge" styleClass="cell-small-label"/>
+            <Label text="Doctor in Charge: " styleClass="label-bold, cell_small_label" minWidth="132.0"/>
+            <Label fx:id="doctorInCharge" styleClass="cell_small_label" wrapText="true"/>
         </HBox>
 
         <!-- Next of Kin (For Patients) -->
         <HBox visible="false">
-            <Label text="Next of Kin: " styleClass="label-bold, cell_small_label"/>
-            <Label fx:id="nextOfKin" styleClass="cell-small-label"/>
+            <Label text="Next of Kin: " styleClass="label-bold, cell_small_label" minWidth="92.0"/>
+            <Label fx:id="nextOfKin" styleClass="cell_small_label" wrapText="true"/>
+        </HBox>
+
+        <!-- Next of Kin Phone(For Patients) -->
+        <HBox visible="false">
+            <Label text="NoK Phone: " styleClass="label-bold, cell_small_label"/>
+            <Label fx:id="nextOfKinPhone" styleClass="cell_small_label"/>
         </HBox>
 
         <!-- Remark -->
         <HBox visible="false">
-            <Label text="Remark: " styleClass="label-bold, cell_small_label"/>
-            <Label fx:id="remark" styleClass="cell-small-label"/>
+            <Label text="Remark: " styleClass="label-bold, cell_small_label" minWidth="70.0"/>
+            <Label fx:id="remark" styleClass="cell_small_label" wrapText="true"/>
         </HBox>
     </VBox>
-</StackPane>
+</ScrollPane>

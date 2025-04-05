@@ -194,8 +194,6 @@ public class MainWindow extends UiPart<Stage> {
 
     /**
      * Update stylesheets based on parameter {@code isDarkTheme}
-     *
-     * @param isDarkTheme
      */
     private void updateStyleSheets(boolean isDarkTheme) {
         ObservableList<String> stylesheets = primaryStage.getScene().getStylesheets();
